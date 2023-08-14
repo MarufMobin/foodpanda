@@ -4,11 +4,15 @@ function Footer() {
   return (
     <Box
       sx={{
-        borderTop: "1px solid black",
-        padding: 2,
+        borderTop: "1px solid #ebebeb",
+        borderBottom: "1px solid #ebebeb",
+        width: { xs: "98%", sm: "95%", md: "90%" },
+        paddingTop: 8,
+        paddingBottom: 8,
+        margin: "auto",
       }}
     >
-      This box has a 1px solid black border only on the top.
+      aslkdjfa;lsdkj
     </Box>
   );
 }
