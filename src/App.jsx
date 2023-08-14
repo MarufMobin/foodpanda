@@ -1,7 +1,11 @@
 import "./App.css";
 
 function App() {
-  return <></>;
+  const [count, setCount] = useState(0)
+
+  return (
+    <></>
+  )
 }
 
 export default App;
