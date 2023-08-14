@@ -1,28 +1,23 @@
-import { Image } from "@mui/icons-material";
-import {
-  Box,
-  CardMedia,
-  Grid,
-  List,
-  ListItem,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { Box, CardMedia, Container, Grid, Typography } from "@mui/material";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 function Footer() {
   return (
-    <Box
+    <Container
       sx={{
-        width: { xs: "98%", sm: "95%", md: "90%" },
+        // width: { xs: "90%", sm: "95%", md: "90%" },
+
+        paddingTop: 5,
         margin: "auto",
       }}
+      container
     >
       <Box
         sx={{
           borderTop: "1px solid #ebebeb",
           borderBottom: "1px solid #ebebeb",
-          paddingTop: 8,
-          paddingBottom: 8,
+          paddingY: 2,
           margin: "auto",
         }}
       >
@@ -40,40 +35,62 @@ function Footer() {
             alt="Paella dish"
           />
           <Box>
-            <Image
+            <FacebookIcon
               sx={{
                 border: 2,
                 borderRadius: "50%",
                 borderColor: "#cacaca",
+                fontSize: "40px",
                 padding: 1,
                 marginRight: 2,
-                "&:hover": { color: "#e21b70" },
+                "&:hover": { color: "#e21b70", borderColor: "#e21b70" },
               }}
             />
-            <Image
+            <InstagramIcon
               sx={{
                 border: 2,
                 borderRadius: "50%",
                 borderColor: "#cacaca",
                 padding: 1,
+                fontSize: "40px",
+
+                "&:hover": { color: "#e21b70", borderColor: "#e21b70" },
               }}
             />
           </Box>
         </Box>
       </Box>
       <Grid
-        sx={{ paddingY: 3, textAlign: "center" }}
+        sx={{
+          paddingY: 3,
+          textAlign: "center",
+          borderBottom: "1px solid #ebebeb",
+        }}
         container
         spacing={{ xs: 2, md: 3 }}
         columns={{ xs: 4, sm: 12, md: 12 }}
       >
         <Grid item xs={12} sm={3} md={3}>
-          <Typography sx={{ color: "#333333" }} variant="caption" gutterBottom>
+          <Typography
+            sx={{
+              color: "#333333",
+              display: { xs: "none", sm: "block", md: "block" },
+            }}
+            variant="caption"
+            gutterBottom
+          >
             © 2022 foodpanda
           </Typography>
         </Grid>
         <Grid item xs={12} sm={3} md={3}>
-          <Typography sx={{ color: "#333333" }} variant="body2" gutterBottom>
+          <Typography
+            sx={{
+              color: "#333333",
+              textAlign: { md: "left", sm: "center", xs: "center" },
+            }}
+            variant="body2"
+            gutterBottom
+          >
             <span>Press</span>
             <span>Help Center</span>
             <span> Terms and conditions</span>
@@ -84,7 +101,14 @@ function Footer() {
           </Typography>
         </Grid>
         <Grid item xs={12} sm={3} md={3}>
-          <Typography variant="body2" gutterBottom>
+          <Typography
+            sx={{
+              color: "#333333",
+              textAlign: { md: "left", sm: "center", xs: "center" },
+            }}
+            variant="body2"
+            gutterBottom
+          >
             <span> Dine-in </span>
             <span>Security</span>
             <span> Partner with us </span>
@@ -95,7 +119,220 @@ function Footer() {
           </Typography>
         </Grid>
         <Grid item xs={12} sm={3} md={3}>
-          <Typography variant="body2" gutterBottom>
+          <Typography
+            sx={{
+              color: "#333333",
+              textAlign: { md: "left", sm: "center", xs: "center" },
+            }}
+            variant="body2"
+            gutterBottom
+          >
+            <span>pandago - Request a rider</span>
+            <span> foodpanda Deals</span>
+            <span> Grocery delivery </span>
+            <span> Become an affiliate</span>
+            <span>All cities </span>
+            <span>Careers</span>
+            <span> Ramadan delivery</span>
+          </Typography>
+
+          <Typography
+            sx={{
+              color: "#333333",
+              display: { xs: "block", sm: "none", md: "none" },
+            }}
+            variant="caption"
+            gutterBottom
+          >
+            © 2022 foodpanda
+          </Typography>
+        </Grid>
+      </Grid>
+
+      <br />
+      <Grid
+        sx={{
+          paddingY: 3,
+          paddingBottom: 3,
+          textAlign: "center",
+          borderBottom: "1px solid #ebebeb",
+        }}
+        container
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 4, sm: 12, md: 12 }}
+      >
+        <Grid item xs={12} sm={4} md={3}>
+          <Typography
+            sx={{ fontWeight: "700", textAlign: "left", fontSize: 15 }}
+            variant="h6"
+            gutterBottom
+          >
+            PIZZA DELIVERY IN DHAKA
+          </Typography>
+          <Typography
+            sx={{
+              color: "#767676",
+              textAlign: "left",
+            }}
+          >
+            <span>Press</span>
+            <span>Help Center</span>
+            <span> Terms and conditions</span>
+            <span>Privacy policy</span>
+            <span>Refund Account Terms & Conditions</span>
+            <span> Cashback Program </span>
+            <span> Pandapro Subscription</span>
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={4} md={3}>
+          <Typography
+            sx={{ fontWeight: "700", textAlign: "left", fontSize: 15 }}
+            variant="h6"
+            gutterBottom
+          >
+            BURGERS DELIVERY IN DHAKA
+          </Typography>
+          <Typography
+            sx={{
+              color: "#767676",
+              textAlign: "left",
+            }}
+          >
+            <span>Press</span>
+            <span>Help Center</span>
+            <span> Terms and conditions</span>
+            <span>Privacy policy</span>
+            <span>Refund Account Terms & Conditions</span>
+            <span> Cashback Program </span>
+            <span> Pandapro Subscription</span>
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={4} md={3}>
+          <Typography
+            sx={{ fontWeight: "700", textAlign: "left", fontSize: 15 }}
+            variant="h6"
+            gutterBottom
+          >
+            ITALIAN FOOD DELIVERY IN DHAKA
+          </Typography>
+          <Typography
+            sx={{
+              color: "#767676",
+              textAlign: "left",
+            }}
+          >
+            <span> Dine-in </span>
+            <span>Security</span>
+            <span> Partner with us </span>
+            <span> How foodpanda works</span>
+            <span>Download foodpanda Apps</span>
+            <span>Careers</span>
+            <span>Corporate Customer</span>
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={4} md={3}>
+          <Typography
+            sx={{
+              fontWeight: "700",
+              textAlign: "left",
+              textTransform: "uppercase",
+              fontSize: 15,
+            }}
+            variant="h6"
+            gutterBottom
+          >
+            CHINESE FOOD DELIVERY DHAKA
+          </Typography>
+          <Typography
+            sx={{
+              color: "#767676",
+              textAlign: "left",
+            }}
+          >
+            <span>pandago - Request a rider</span>
+            <span> foodpanda Deals</span>
+            <span> Grocery delivery </span>
+            <span> Become an affiliate</span>
+            <span>All cities </span>
+            <span>Careers</span>
+            <span> Ramadan delivery</span>
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={4} md={3}>
+          <Typography
+            sx={{
+              fontWeight: "700",
+              textAlign: "left",
+              textTransform: "uppercase",
+              fontSize: 15,
+            }}
+            variant="h6"
+            gutterBottom
+          >
+            PIZZA DELIVERY IN DHAKA
+          </Typography>
+          <Typography
+            sx={{
+              color: "#333333",
+              textAlign: "left",
+            }}
+          >
+            <span>pandago - Request a rider</span>
+            <span> foodpanda Deals</span>
+            <span> Grocery delivery </span>
+            <span> Become an affiliate</span>
+            <span>All cities </span>
+            <span>Careers</span>
+            <span> Ramadan delivery</span>
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={4} md={3}>
+          <Typography
+            sx={{
+              fontWeight: "700",
+              textAlign: "left",
+              textTransform: "uppercase",
+              fontSize: 15,
+            }}
+            variant="h6"
+            gutterBottom
+          >
+            INDIAN FOOD DELIVERY IN DHAKA
+          </Typography>
+          <Typography
+            sx={{
+              color: "#767676",
+              textAlign: "left",
+            }}
+          >
+            <span>pandago - Request a rider</span>
+            <span> foodpanda Deals</span>
+            <span> Grocery delivery </span>
+            <span> Become an affiliate</span>
+            <span>All cities </span>
+            <span>Careers</span>
+            <span> Ramadan delivery</span>
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={4} md={3}>
+          <Typography
+            sx={{
+              fontWeight: "700",
+              textAlign: "left",
+              textTransform: "uppercase",
+              fontSize: 15,
+            }}
+            variant="h6"
+            gutterBottom
+          >
+            FAST FOOD DELIVERY IN DHAKA
+          </Typography>
+          <Typography
+            sx={{
+              color: "#767676",
+              textAlign: "left",
+            }}
+          >
             <span>pandago - Request a rider</span>
             <span> foodpanda Deals</span>
             <span> Grocery delivery </span>
@@ -106,7 +343,22 @@ function Footer() {
           </Typography>
         </Grid>
       </Grid>
-    </Box>
+
+      <Box sx={{ marginY: 5 }}>
+        <Typography>
+          <span>Hong Kong | </span>
+          <span>Hong Kong | </span>
+          <span>Pakistan | </span>
+          <span>Singapore | </span>
+          <span>Malaysia | </span>
+          <span>Thailand | </span>
+          <span>Taiwan | </span>
+          <span>Romania | </span>
+          <span>Bulgaria | </span>
+          <span>Philippines | </span>
+        </Typography>
+      </Box>
+    </Container>
   );
 }
 
